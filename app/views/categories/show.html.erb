@@ -1,0 +1,8 @@
+Category: <%= @category.title %></br></br>
+<%= link_to "New Post", new_post_path(@category) %>
+
+<% @category.posts.each do |post| %>
+  <ul class="post">
+  <li><%= link_to post.title, post_path(post) %></li>
+  </ul>
+<% end %>

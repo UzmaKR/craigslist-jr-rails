@@ -1,0 +1,7 @@
+
+<h2>Post</h2>
+
+Edit URL: <%= link_to edit_post_url(@post) + '?key=' + @post.key.to_s, edit_post_url(@post) + '?key=' + @post.key.to_s %><br><br>
+
+Title: <%= @post.title %></br></br>
+Content: <%= @post.body %>

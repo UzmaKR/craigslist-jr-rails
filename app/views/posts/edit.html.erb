@@ -1,0 +1,7 @@
+
+<%= form_for @post do |f| %>
+<%= f.hidden_field  :category_id, :value => @post.category_id %>
+<%= f.text_field :title, :value => @post.title %>
+<%= f.text_area :body, :value => @post.body %>
+<%= f.submit "Submit" %>
+<% end %>
